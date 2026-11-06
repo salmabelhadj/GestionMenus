@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace GestionEtudiants
+{
+    class Etudiant
+    {
+        public int Numero { get; set; }
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
+        public List<double> Notes { get; set; }
+
+        public Etudiant(int numero, string nom, string prenom)
+        {
+            Numero = numero;
+            Nom = nom;
+            Prenom = prenom;
+            Notes = new List<double>();
+        }
+
+        public double CalculerMoyenne()
+        {
+            if (Notes.Count == 0)
+                return 0;
+
+            return Notes.Average();
+        }
+
+        public void Afficher()
+        {
+            Console.WriteLine("Numéro : " + Numero);
+            Console.WriteLine("Nom : " + Nom);
+            Console.WriteLine("Prénom : " + Prenom);
+            Console.WriteLine("Moyenne : " + CalculerMoyenne());
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Etudiant> etudiants = new List<Etudiant>();
+
+            Etudiant e1 = new Etudiant(1, "Ali", "Ahmed");
+            e1.Notes.Add(15);
+            e1.Notes.Add(17);
+            e1.Notes.Add(14);
+
+            Etudiant e2 = new Etudiant(2, "Sarra", "Amira");
+            e2.Notes.Add(12);
+            e2.Notes.Add(16);
+            e2.Notes.Add(13);
+
+            etudiants.Add(e1);
+            etudiants.Add(e2);
+
+            foreach (Etudiant e in etudiants)
+            {
+                e.Afficher();
+                Console.WriteLine("-------------------");
+            }
+        }
+    }
+}
