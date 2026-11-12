@@ -40,4 +40,20 @@ public class Etudiant
         return Moyenne >= 10;
     }
 }
-helooooooo rawene 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Bonjour le monde !");
+        Console.WriteLine("Bienvenue sur Visual Studio.");
+
+        Console.Write("Quel est votre nom ? : ");
+        string nom = Console.ReadLine();
+
+        Console.WriteLine("Bonjour " + nom + " !");
+
+        Console.ReadLine();
+    }
+}
