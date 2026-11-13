@@ -1,7 +1,10 @@
-# Dossier de cache de Visual Studio (cause de l'erreur Permission denied)
+
+# Dossier interne et cache de Visual Studio
 .vs/
 
-# Résultats de compilation
+# Fichiers de compilation
+bin/
+obj/
 [Bb]in/
 [Oo]bj/
 [Dd]ebug/
@@ -10,20 +13,24 @@ x64/
 x86/
 
 # Fichiers utilisateur de Visual Studio
-*.suo
 *.user
+*.suo
 *.userosscache
 *.sln.docstates
 *.vsidx
 *.sqlite
 
-# Résultats de tests
+# Résultats de tests et caches
 TestResults/
 [Tt]est[Rr]esult*/
+*.log
 
-# Paquets NuGet
-*.nupkg
+# Configuration VS Code
+.vscode/
+
+# Packages NuGet
 packages/
+*.nupkg
 
 # Fichiers système
 Thumbs.db
