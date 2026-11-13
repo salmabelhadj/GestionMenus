@@ -46,7 +46,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Bonjour le monde !");
+        Console.WriteLine("Bonjour le oooooo !");
         Console.WriteLine("Bienvenue sur Visual Studio.");
 
         Console.Write("Quel est votre nom ? : ");
@@ -55,5 +55,5 @@ class Program
         Console.WriteLine("Bonjour " + nom + " !");
 
         Console.ReadLine();
-    }
+    } console.writeline
 }
