@@ -1,25 +1,37 @@
-# Dossier interne de Visual Studio (cause de l'erreur)
+
+# Dossier interne et cache de Visual Studio
 .vs/
 
 # Fichiers de compilation
 bin/
 obj/
+[Bb]in/
+[Oo]bj/
 [Dd]ebug/
 [Rr]elease/
 x64/
 x86/
 
-# Fichiers utilisateur
+# Fichiers utilisateur de Visual Studio
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
+*.vsidx
+*.sqlite
 
 # Résultats de tests et caches
 TestResults/
+[Tt]est[Rr]esult*/
 *.log
+
+# Configuration VS Code
 .vscode/
 
 # Packages NuGet
 packages/
 *.nupkg
+
+# Fichiers système
+Thumbs.db
+.DS_Store
