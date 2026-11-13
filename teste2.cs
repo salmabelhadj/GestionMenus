@@ -4,7 +4,7 @@ public class Class1
 {
 	public Class1()
 	{
-		console.writline("boow ")
+		console.writline("iii ")
 			gvzfghz
 
 	}
