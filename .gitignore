@@ -1,0 +1,25 @@
+# Dossier interne de Visual Studio (cause de l'erreur)
+.vs/
+
+# Fichiers de compilation
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Fichiers utilisateur
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Résultats de tests et caches
+TestResults/
+*.log
+.vscode/
+
+# Packages NuGet
+packages/
+*.nupkg
