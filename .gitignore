@@ -35,3 +35,6 @@ packages/
 # Fichiers système
 Thumbs.db
 .DS_Store
+
+*.db
+*.csproj.user
